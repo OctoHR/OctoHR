@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.content-container {
+ 
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: calc(100vh - 50px);
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-text {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  vertical-align: sub;
+}
+
+.feature-block-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.feature-block-content-container {
+}
+
+.feature-block-content-title {
+  font-size: 2.8em;
+}
+
+.feature-block-content-description {
+  margin-bottom: 70px;
+  font-size: 1.9em;
+}
+
+.feature-block-content-button-container {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.feature-block-content-button {
+  display: inline-block;
+  padding: 20px 80px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  line-height: 48px;
+  color: #fff;
+  background: #00c6b4;
+}
+
+.feature-block-content-button:hover {
+  background: #00d9c5;
+  box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.25);
+}
+
+
+.feature-block-stats-wrapper {
+  animation: 1s ease-in 0s 1 show;
+}
+
+.feature-block-stats-container {
+  animation: 2s ease-in 1s infinite glow;
+}
+
+.feature-block-image-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.feature-block-image {
+  margin-left: 20px;
+  background-image: url(images/octohr-userprofile.jpg);
+  background-size: cover;
+  
+  max-width: 600px;
+  width: 30vw;
+  height: 462px;
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+@media (max-width: 1380px) {
+  body {
+    font-size: 14px;
+  }
+
+  .feature-block-content-description {
+    margin-bottom: 60px;
+  }
+
+  .feature-block-image {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 12px;
+  }
+
+  .feature-block-image {
+     width: 15vw;
+  }
+
+  .feature-block-content-description {
+    margin-bottom: 50px;
+  }
+
+  .feature-block-content-button {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .feature-block-container {
+    flex-direction: column;
+  }
+
+  .feature-block-content-container {
+    margin: 10px;
+  }
+
+  .feature-block-image-container {
+    align-self:flex-end;
+  }
+
+  .feature-block-image {
+     width: 25vw;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 187, 170, 0.7);
+  }
+  50% {
+    box-shadow: 0px 2px 20px 0px rgba(0, 187, 170, 0.7);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 187, 170, 0.7);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/*    App Styles   */
+
+.App {
+  width: 220px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border-radius: 2px;
+  color: #000;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+.App-data-section {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.117647);
+}
+
+.App-data-section:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.App-data-section-title {
+  font-weight: bold;
+}
+
+.App-data-section-value {
+  font-weight: bold;
+} 
+
+.App-hint-link-container {
+  text-align: center;
+}
+
+.App-hint-link, .App-hint-link:active {
+  font-size: 10px;
+  color: #0366d6;
+}
+
