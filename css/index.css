@@ -15,8 +15,9 @@ body {
 .content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   min-height: calc(100vh - 50px);
+  flex-direction: column;
 }
 
 .logo-container {
@@ -42,7 +43,14 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100vw;
+  height: 90vh;
   flex-wrap: wrap;
+}
+
+.feature-block-container__search {
+  height: 100vh;
+  justify-content: center;
+  background: #fafafa;
 }
 
 .feature-block-content-container {
@@ -76,9 +84,17 @@ body {
   background: #00c6b4;
 }
 
+.feature-block-container__search .feature-block-content-button {
+  background: #0366d6;
+}
+
 .feature-block-content-button:hover {
   background: #00d9c5;
   box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.25);
+}
+
+.feature-block-container__search .feature-block-content-button:hover {
+  background: #0366d6;
 }
 
 
@@ -95,6 +111,10 @@ body {
   align-items: flex-start;
   justify-content: center;
   margin-left: 80px;
+}
+
+.feature-block-search-container {
+  margin-right: 80px;
 }
 
 .feature-block-image {
@@ -143,11 +163,18 @@ body {
 
 @media (max-width: 1023px) {
   .feature-block-container {
+    height: auto;
     flex-direction: column;
   }
 
+  .feature-block-container__search {
+    height: auto;
+    padding: 40px 10px;
+    flex-direction: column-reverse;
+  }
+
   .feature-block-content-container {
-    margin: 10px;
+    margin: 15px;
   }
 
   .feature-block-image-container {
@@ -156,6 +183,10 @@ body {
 
   .feature-block-image {
      width: 25vw;
+  }
+
+  .feature-block-search-container {
+    margin: 0 auto;
   }
 }
 
@@ -196,6 +227,7 @@ body {
 /*    App Styles   */
 
 .App {
+  position: relative;
   width: 220px;
   padding: 10px;
   background-color: #fff;
@@ -237,3 +269,59 @@ body {
   color: #0366d6;
 }
 
+.SearchPageApp-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.SearchPageApp-field-label {
+  font-weight: bold;
+}
+
+.SearchPageApp-field-container {
+  margin-bottom: 10px;
+}
+
+.SearchPageApp-field {
+  width: 200px;
+}
+
+.SearchPageApp-field__short {
+  width: 100px;
+}
+
+.SearchPageApp-select {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.SearchPageApp-button-container {
+  text-align: center;
+}
+
+.SearchPageApp-button {
+  padding: 4px 36px;
+  border: 1px solid #0366d6;
+  border-radius: 2px;
+  outline: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 18px;
+  background-color:#0366d6;
+  color:#fff;
+}
+
+.SearchPageApp-button:hover {
+  background-color: #fff;
+  color: #0366d6;
+}
+
+.App-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
