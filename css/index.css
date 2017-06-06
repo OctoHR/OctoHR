@@ -97,13 +97,16 @@ body {
   background: #0366d6;
 }
 
-
 .feature-block-stats-wrapper {
   animation: 1s ease-in 0s 1 show;
 }
 
 .feature-block-stats-container {
-  animation: 2s ease-in 1s infinite glow;
+  animation: 2s ease-in 1s infinite glow-green;
+}
+
+.feature-block-search-container {
+  animation: 2s ease-in 1s infinite glow-blue;
 }
 
 .feature-block-image-container {
@@ -190,7 +193,7 @@ body {
   }
 }
 
-@keyframes glow {
+@keyframes glow-green {
   0% {
     box-shadow: 0px 0px 0px 0px rgba(0, 187, 170, 0.7);
   }
@@ -199,6 +202,19 @@ body {
   }
   100% {
     box-shadow: 0px 0px 0px 0px rgba(0, 187, 170, 0.7);
+  }
+}
+
+
+@keyframes glow-blue {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 102, 204, 0.7);
+  }
+  50% {
+    box-shadow: 0px 2px 20px 0px rgba(0, 102, 204, 0.7);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 102, 204, 0.7);
   }
 }
 
