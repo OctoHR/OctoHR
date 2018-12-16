@@ -20,8 +20,32 @@ body {
   flex-direction: column;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .logo-container {
   text-align: center;
+}
+
+.donate-link {
+  display: inline-block;
+  padding: 5px 40px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  background: #FFA000;
+}
+
+.donate-link:hover {
+  background: #FFB300; 
 }
 
 .logo-text {
