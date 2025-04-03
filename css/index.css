@@ -9,7 +9,6 @@ body {
 }
 
 .content-container {
- 
 }
 
 .content {
@@ -40,11 +39,11 @@ body {
   font-size: 20px;
   line-height: 22px;
   color: #fff;
-  background: #FFA000;
+  background: #ffa000;
 }
 
 .donate-link:hover {
-  background: #FFB300; 
+  background: #ffb300;
 }
 
 .logo-text {
@@ -116,7 +115,7 @@ body {
 }
 
 .feature-block-container__donate .feature-block-content-button {
-  background: #FF3D00;
+  background: #ff3d00;
   height: 30px;
   padding: 30px 80px;
 }
@@ -130,7 +129,7 @@ body {
 }
 
 .feature-block-container__donate .feature-block-content-button:hover {
-  background: #FF8A65;
+  background: #ff8a65;
 }
 
 .feature-block-stats-wrapper {
@@ -160,7 +159,7 @@ body {
   margin-left: 20px;
   background-image: url(images/octohr-userprofile.jpg);
   background-size: cover;
-  
+
   max-width: 600px;
   width: 30vw;
   height: 462px;
@@ -187,7 +186,7 @@ body {
   }
 
   .feature-block-image {
-     width: 15vw;
+    width: 15vw;
   }
 
   .feature-block-content-description {
@@ -217,11 +216,11 @@ body {
   }
 
   .feature-block-image-container {
-    align-self:flex-end;
+    align-self: flex-end;
   }
 
   .feature-block-image {
-     width: 25vw;
+    width: 25vw;
   }
 
   .feature-block-search-container {
@@ -240,7 +239,6 @@ body {
     box-shadow: 0px 0px 0px 0px rgba(0, 187, 170, 0.7);
   }
 }
-
 
 @keyframes glow-blue {
   0% {
@@ -275,7 +273,6 @@ body {
   }
 }
 
-
 /*    App Styles   */
 
 .App {
@@ -283,13 +280,15 @@ body {
   width: 220px;
   padding: 10px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
+    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   border-radius: 2px;
   color: #000;
   font-weight: 300;
   font-size: 0.8em;
   line-height: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .App--link {
@@ -315,13 +314,14 @@ body {
 
 .App-data-section-value {
   font-weight: bold;
-} 
+}
 
 .App-hint-link-container {
   text-align: center;
 }
 
-.App-hint-link, .App-hint-link:active {
+.App-hint-link,
+.App-hint-link:active {
   font-size: 10px;
   color: #0366d6;
 }
@@ -366,8 +366,8 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 18px;
-  background-color:#0366d6;
-  color:#fff;
+  background-color: #0366d6;
+  color: #fff;
 }
 
 .SearchPageApp-button:hover {
@@ -386,5 +386,77 @@ body {
 footer {
   background: #fafafa;
   padding: 8px;
-  text-align: center
+  text-align: center;
+}
+
+/* Privacy Policy Styles */
+.privacy-policy {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.privacy-policy h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.privacy-policy .last-updated {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.privacy-policy h2 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.privacy-policy h3 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.privacy-policy p {
+  margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.privacy-policy li {
+  margin-bottom: 10px;
+}
+
+.privacy-policy section {
+  margin-bottom: 40px;
+}
+
+.privacy-policy strong {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 0 15px;
+  }
+
+  .privacy-policy h1 {
+    font-size: 2em;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.5em;
+  }
+
+  .privacy-policy h3 {
+    font-size: 1.2em;
+  }
 }
